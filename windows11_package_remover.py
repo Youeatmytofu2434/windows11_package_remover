@@ -5,7 +5,9 @@ FILE_PATH = "packages.txt"
 
 def read_file( fileName: str ) -> list[ str ]:
     try:
+        # Keeps track of all packages' IDs.
         packageList: list[ str ] = []
+        
         with open( fileName ) as file:
             lines = file.readlines()
 
